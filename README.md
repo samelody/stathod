@@ -28,7 +28,7 @@ In your app `build.gradle`:
 
 ```gradle
 dependencies {
-    compile 'com.github.samelody:stathod:0.1.0'
+    compile 'com.github.samelody:stathod:0.2.0'
 }
 ```
 
@@ -38,7 +38,7 @@ Coming soon...
 
 # Compatibility
 
-- **Android SDK**: Succession requires a minimum API level of 14.
+- **Android SDK**: Requires a minimum API level of 14.
 
 # License
 
