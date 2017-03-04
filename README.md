@@ -1,8 +1,8 @@
 # Stathod
 
-[![JitPack](https://jitpack.io/v/com.github.samelody/stathod.svg)](https://jitpack.io/#com.github.samelody/stathod)
+[![JitPack](https://jitpack.io/v/samelody/stathod.svg)](https://jitpack.io/#samelody/stathod)
 ![Android](https://img.shields.io/badge/platform-Android-brightgreen.svg)
-[![Apache](https://img.shields.io/dub/l/vibe-d.svg)](LICENSE)
+[![Apache](https://img.shields.io/hexpm/l/plug.svg)](LICENSE)
 ![API](https://img.shields.io/badge/API-14%2B-brightgreen.svg)
 
 Utilities for Android.
@@ -11,7 +11,7 @@ Utilities for Android.
 
 # Download
 
-Stathod is available on `JitPack` repository.
+This project is available on `JitPack` repository.
 
 In your root `build.gradle`:
 

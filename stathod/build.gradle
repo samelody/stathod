@@ -1,45 +1,10 @@
-apply plugin: 'com.android.library'
-apply plugin: 'com.github.dcendents.android-maven'
-
-def config = [
-        group            : 'com.github.samelody',
-        compileSdkVersion: 25,
-        minSdkVersion    : 14,
-        buildToolsVersion: '25.0.2',
-        supportVersion   : '25.1.0',
-        versionCode      : 2,
-        versionName      : '0.2.0',
-        junitVersion     : '4.12'
-]
-
-group = config.group
-
-android {
-    compileSdkVersion config.compileSdkVersion
-    buildToolsVersion config.buildToolsVersion
-
-    defaultConfig {
-        minSdkVersion config.minSdkVersion
-        targetSdkVersion config.compileSdkVersion
-        versionCode config.versionCode
-        versionName config.versionName
-
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-
-    }
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-        }
-    }
-}
+apply from: '../gradle/lib.gradle'
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+    compile libs.appcompat
+    testCompile libs.junit
+    androidTestCompile(libs.espresso, {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile "com.android.support:appcompat-v7:${config.supportVersion}"
-    testCompile "junit:junit:${config.junitVersion}"
 }
