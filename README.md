@@ -28,13 +28,19 @@ In your app `build.gradle`:
 
 ```gradle
 dependencies {
-    compile 'com.github.samelody:stathod:0.2.0'
+    compile 'com.github.samelody:stathod:0.3.0'
 }
 ```
 
 # Getting started
 
 Coming soon...
+
+# Dependencies
+
+```java
+compile 'com.android.support:support-v4:25.3.0'
+```
 
 # Compatibility
 

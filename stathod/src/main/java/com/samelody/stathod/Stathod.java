@@ -21,7 +21,7 @@ import android.content.Context;
 import static com.samelody.stathod.util.Objects.requireNonNull;
 
 /**
- *
+ * The class represents this library.
  *
  * @author Belin Wu
  */
@@ -35,11 +35,11 @@ public final class Stathod {
     private Stathod() {}
 
     /**
-     * Sets the application context.
+     * Init the library.
      *
      * @param context The application context
      */
-    public static void setAppContext(Context context) {
+    public static void init(Context context) {
         requireNonNull(context, "context must not be null");
         appContext = context.getApplicationContext();
     }
@@ -50,7 +50,7 @@ public final class Stathod {
      * @return The application context
      */
     public static Context getAppContext() {
-        requireNonNull(appContext, "appContext is null, call Stathod#setAppContext() first");
+        requireNonNull(appContext, "appContext is null, call Stathod#init() first");
         return appContext;
     }
 }
